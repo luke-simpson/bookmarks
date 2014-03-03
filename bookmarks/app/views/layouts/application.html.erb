@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html>
+<header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "Bookmarks app logo goes here", '/bookmarks', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "Home",    '/bookmarks' %></li>
+              <li><%= link_to "New",    '/bookmarks/new' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 <head>
   <title>Bookmarks</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
