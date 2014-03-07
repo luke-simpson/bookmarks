@@ -7,4 +7,5 @@ describe Bookmark do
         expect(17 + 42).to eq 59
       end
     end
+  end
 end
