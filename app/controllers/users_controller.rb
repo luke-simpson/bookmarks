@@ -24,4 +24,8 @@ class UsersController < ApplicationController
     params.require(:user).permit(:name, :email, :password,
     :password_confirmation)
   end
+  
+  def show_login
+    render "sessions/new"
+  end
 end

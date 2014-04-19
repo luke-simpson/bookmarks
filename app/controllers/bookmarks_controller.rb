@@ -4,7 +4,12 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.json
   def index
-    @bookmarks = Bookmark.all
+    # user = User.find_by(self.email)
+    # if user && user.authenticate(params[:session][:password])
+      # render "sessions/new"
+      # else
+      @bookmarks = Bookmark.all
+      # end
   end
 
   # GET /bookmarks/1
