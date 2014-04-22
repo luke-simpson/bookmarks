@@ -1,6 +1,11 @@
 class BookmarksController < ApplicationController
   before_action :set_bookmark, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:index]
 
+  def authenticate_user!
+    redirect_to signin_path unless signed_in?
+  end
+  
   # GET /bookmarks
   # GET /bookmarks.json
   def index
