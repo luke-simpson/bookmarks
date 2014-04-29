@@ -31,14 +31,6 @@ describe BookmarksController do
   # BookmarksController. Be sure to keep this updated too.
   let(:valid_session) { {} }
 
-  describe "GET index" do
-    it "assigns all bookmarks as @bookmarks" do
-      bookmark = Bookmark.create! valid_attributes
-      get :index, {}, valid_session
-      assigns(:bookmarks).should eq([bookmark])
-    end
-  end
-
   describe "GET show" do
     it "assigns the requested bookmark as @bookmark" do
       bookmark = Bookmark.create! valid_attributes
